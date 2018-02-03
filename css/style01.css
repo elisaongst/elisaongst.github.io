@@ -1,0 +1,226 @@
+#wrapper { 
+    background-color: rgb(252, 237, 245);
+    float: inherit;
+    width: 900px;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+header {
+    float: left;
+    width: 880px;
+    height: 100px;
+    background-color: rgb(252, 237, 245);
+    color:  rgb(85, 129, 126);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+
+}
+nav {
+    float: left;
+    width: 870px;
+    height: 30px;
+    background-color: rgb(85, 129, 126);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(252, 237, 245);
+    padding: 10px 0px 3px 30px;
+}
+
+nav a {
+    color: rgb(253, 253, 253); 
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgb(205, 227, 248); 
+    font-weight: bolder;
+    
+}
+
+a {
+    color:rgb(85, 129, 126); 
+    text-decoration: none; 
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+article {
+    float: left;
+    width: 600px;
+    background-color: rgb(252, 237, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-style:normal;
+    font-size: 12px;
+    color: slategray;
+    height:300px;
+}
+
+aside {
+    float: left;
+    width:240px;
+    background-color: rgb(252, 237, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-style:normal;
+    font-size: 12px;
+    color: slategray;
+    height:300px;
+}
+footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(206, 206, 206);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding: 20px 10px 10px 20px;
+}
+/*contact form */
+
+.contact_form h2, .contact_form label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.contact_form ul {
+    widows: 100%;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.contact_form li {
+    padding:5px;
+    border-bottom: 1px solid cadetblue;
+    position: relative;
+}
+
+.required_notification, .form_hint {
+    font-size: 10px;
+
+}
+*:focus {
+outline: none;
+
+}
+
+.contact_form label {
+    width: 80px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.contact_form input {
+width: 220px;
+height: 20px;
+}
+
+.contact_form textarea {
+width: 220px;
+
+}
+
+.contact_form button {
+    margin-left: 90px;
+    
+}
+.contact_form input, .contact_form textarea {
+    border: 1px dashed rgb(112, 112, 112);
+    box-shadow: 0px 0px 3px rgb(255, 225, 215), 0px 10px 3px rgb(234, 241, 255) inset;
+    border-radius: 5px;
+    padding-right:10px;
+    -moz-transition: padding .2s;
+    -webkit-transition: padding .2s;
+    -o-transition: padding .2s;
+    transition: padding .2s;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+    background: rgb(255, 248, 218);
+    border: 1px solid rgb(156, 131, 121);
+    box-shadow: 0px 0px 3px rgb(216, 170, 170);
+    padding-right:20px;
+}
+
+.contact_form input:required, .contact_form textarea:required {
+    background: #fff url('../images/red_asterisk.png') no-repeat 98% center;
+
+}
+.contact_form input:valid, .contact_form textarea:valid {
+    background: #fff url('../images/valid.png') no-repeat 98% center;
+    box-shadow: 0 0 5px rgb(165, 219, 144);
+    border-color: rgb(98, 126, 98);
+}
+
+.contact_form input:invalid, .contact_form textarea:invalid {
+    background: #fff url('../images/invalid.png') no-repeat 98% center;
+    box-shadow: 0 0 5px rgb(219, 148, 172);
+    border-color: rgb(212, 120, 205);
+}
+
+button.submit {
+    background-color: rgb(117, 133, 89);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid cadetblue;
+    color: #fff;
+    font-weight: bold;
+}
+
+button.submit:hover {
+    cursor: pointer;
+}
+
+button.submit:active {
+    background-color: rgb(124, 170, 223);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid rgb(45, 100, 102);
+    color: #fff;
+    font-weight: bold;
+}
+
+.form_hint {
+    background: rgb(138, 102, 102);
+    border-radius: 3px 3px 3px 3px;
+    color: #fff;
+    margin-left: 5px;
+    padding: 1px 5px;
+    display: none;
+
+}
+
+.form_hint::before {
+    content:"\25C0";
+    position: absolute;
+    color: rgb(138, 102, 102);
+    top: 11px;
+    left: 333px;
+}
+/* to hide the form_hint, go to the class and set the display to none */
+.contact_form input:focus + .form_hint { 
+    display: inline;
+}
+.contact_form input:required:valid + .form_hint{ 
+    background: lightseagreen;
+    display:none;
+
+}
+.contact_form input:required:valid + .form_hint::before { 
+    content:"\25C0";
+    position: absolute;
+    color: lightseagreen;
+    top: 11px;
+    left: 333px;
+}

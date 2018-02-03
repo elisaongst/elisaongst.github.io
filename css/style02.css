@@ -1,0 +1,52 @@
+#container {
+    width: 80%;
+    margin: 20px auto;
+    background: lightblue;
+}
+
+#div1 {
+    background: peru;
+    color: lightgoldenrodyellow;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 10px 10px 10px;
+    
+}
+
+#div2 {
+    float: left;
+    width: 33%;
+    height:150px;
+    display:inline-block;
+    background: lightpink;
+    
+}
+
+#div3 {
+    float: left;
+    width: 33%;
+    height:150px;
+    display:inline-block;
+    background:lightgrey;
+    
+}
+
+#div4 {
+    float: left;
+    width: 33%;
+    height:150px;
+    display:inline-block;
+    background: lightpink;
+    padding-right:1%;
+    
+}
+
+#div5 {
+    float: left;
+    width:100%;
+    background: rgb(141, 86, 163);
+    margin-top: 10px;
+    
+}
+
